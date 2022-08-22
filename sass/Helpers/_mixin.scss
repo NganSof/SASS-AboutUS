@@ -1,0 +1,17 @@
+@mixin button($bg, $c, $bd, $w, $ra, $dl, $p) {
+  background-color: $bg;
+  color: $c;
+  border: $bd;
+  width: $w;
+  border-radius: $ra;
+  display: $dl;
+  padding: $p;
+  @content;
+}
+
+@mixin hoverBtn($bd, $c, $bg) {
+  border: $bd;
+  color: $c;
+  background-color: $bg;
+  @content;
+}
